@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shorts",
+  "info": {
+    "singularName": "short",
+    "pluralName": "shorts",
+    "displayName": "Shorts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uploadedby": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

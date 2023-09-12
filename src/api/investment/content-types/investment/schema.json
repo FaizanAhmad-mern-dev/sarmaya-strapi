@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investments",
+  "info": {
+    "singularName": "investment",
+    "pluralName": "investments",
+    "displayName": "Investments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "feature",
+        "photos",
+        "finance"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "investmentcontent": {
+      "type": "richtext"
+    },
+    "feature": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isfeatured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
